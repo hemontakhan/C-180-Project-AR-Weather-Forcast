@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>India Tour</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>    
+
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+ </head>
+ <body>
+
+   <script
+   src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+   <link rel="stylesheet"
+   href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+   type="text/css">
+
+   <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+  <div class="container">
+   <div class="row">
+    <div>
+    <h1>AR NAVIGATION</h1>
+    </div>
+
+    <div id="map"></div>
+   </div>
+
+   <!--Images-->
+   <div>
+      <img class="image-marker" id="gateway" src="./assets/India_gate.jpg">
+      <img class="image-marker" id="gate" src="./assets/gate.jpg">
+      <img class="image-marker" id="amber" src="./assets/amber_fort">
+      <img class="image-marker" id="lotus" src="./assets/Lotus_temple.webp">
+      <img class="image-marker" id="taj" src="./assets/Taj_mahal.jpg">
+      <img class="image-marker" id="victoria" src="./assets/Victoria-memorial.jpg">
+   </div>
+  </div>
+
+</div>
+ <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+  <button id="navigate-button">Navigate</button>
+ </div>
+</div>
+</body>
+
+  <link rel="stylesheet" href='./style.css'/>
+  <script src="./map.js" type="text/javascript"></script>
+ </body>
+</html>
